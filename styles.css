@@ -1,0 +1,627 @@
+@import"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,500;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.menu{   
+    background-color: #D9F0FC;
+    box-shadow: 0px 4px 6px 2px;
+}
+.dimacation{
+    width: 100%;
+    height: auto;
+    background: black;
+    color: #D9F0FC;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    
+    
+}
+.dimacation p{
+    animation: movetext 25s linear infinite;
+    font-weight: 700;
+    color: #D9F0FC;
+}
+@keyframes movetext {
+    from{
+        transform: translateX(90%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.topheader{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color : #D9F0FC;
+    box-shadow: 0 2px 5px rgba(0, 85, 175, 0.642);
+    padding-top: 2vh;
+    
+    
+}
+.menu header{
+    width: 85%;
+    background: '#d9f0fc';
+    margin: auto;
+    background-color: #D9F0FC;
+    margin-top: 15px;
+    
+    
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    background-color: #D9F0FC;
+}
+.logo h2{
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+}
+#B, #ov{
+    color: #1DA0E9;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+nav ul{
+    display: flex;
+    font-weight: bold;
+    width: 35%;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.btn{
+    padding: 0 10px 0 10px;
+    margin-right: 20px;
+    font-weight: bold;
+    background-color: #1DA0E9;
+    width: 145px;
+    border-radius: 8px;
+    flex-shrink: 0;  
+
+}
+li{
+    padding: 5px;
+    
+}
+#homefix{
+    background-color: #1DA0E9;
+    padding: 5px;
+    border: 2px solid #D9F0FC;
+}
+li:hover{
+    background: #1DA0E9;
+    padding: 5px;
+    border: 2px solid #D9F0FC;
+}
+a:hover{
+    color: #000;
+}
+
+
+@media (min-width: 300px){
+    nav ul{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        
+    }
+    .menu header{
+        flex:content;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo h2{
+        text-align: center;
+    }
+    a{
+        font-size: 14px;
+    }
+    .topheader{
+        padding-top: 1vh;
+    }
+}
+@media (min-width: 700px){
+    nav ul{
+        width: 50%;
+    }
+    .logo h1{
+        text-align: center;
+    }
+    a{
+        font-size: 14px;
+    }
+    .topheader{
+        padding-top: 1vh;
+    }
+    .btn{
+        width: 145px;
+    }
+}
+
+/*Home txt and pictures*/
+
+.hometop{
+    width: 85%;
+    margin: auto;
+    margin-top: 65px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #D9F0FC;
+    padding: 0px;
+ 
+    
+}
+.text{
+    width: 100vw;
+    max-width: 650px;
+    margin-top: -20px;
+    height: normal;
+    
+}
+#smalltext{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Space Grotesk', sans-serif;
+}
+#smalltext2{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 10px;
+    
+}
+#bigtext{
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.btn2{
+    margin: 20px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    background: #1DA0E9;
+    border-radius: 5px;
+}
+.iconsandbtn{
+    display: flex;
+    justify-content: center;
+    width: normal;
+}
+.icons{
+    
+    margin: 20px;
+    font-weight: bold;
+    width: 150px;
+    border: none;
+    
+}
+.icons a{
+    font-size: x-large;
+    width: 50px;
+}
+.icon1, .icon2{
+    font-size: x-large;
+    padding: 0 7px;
+   
+}
+.icon1{    
+    color: #0077B5;
+    margin-right: 40px;
+    font-size: x-large;
+}
+.icon1:hover{
+    color: #0077B5;
+}
+.icon2{
+    color: rgb(240, 100, 100);
+}
+.icon2:hover{
+    color: rgb(240, 100, 100); 
+}
+img{
+    width: 100%;
+    height: 412;
+    max-width: 300px;
+    flex-shrink: 0;
+    
+    
+}
+.img1{
+    
+    margin: auto;
+    
+}
+.img1 img{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 416px;
+}
+
+@media(min-width: 300px){
+    .hometop{
+        
+        padding-top: 6rem;
+    }
+    #smalltext{
+        font-size: 16px;
+    }
+    #bigtext{
+        font-size: 25px;
+    }
+    .img1 img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media(min-width: 700px){
+    .hometop{
+        
+        padding-top:4rem;
+        
+    }
+    #smalltext{
+        font-size: 16px;
+    }
+    #bigtext{
+        font-size: 35px;
+    }
+    .dimacation{
+        word-spacing: 6px;
+        height: 25px;
+    }
+    .dimacation p{
+        text-align: center;
+    }
+
+    .img1 img{
+        width: 300px;
+        height: 300px;
+        
+    }
+}
+@media(min-width: 1200px){
+    .logo{
+       width: 0px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hometop{
+        
+        padding-top: 10px;
+        height: 80vh;
+    }
+    #smalltext{
+        font-size: 16px;
+    }
+    #bigtext{
+        font-size: 48px;
+    }
+}
+/*About me*/
+.hometop{
+    height: normal;
+   
+}
+.aboutme{
+    width: 85%;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    object-fit: cover;
+    align-items: center;
+    padding-top: 10px;
+}
+h3{
+    margin-bottom: 7px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: underline;
+}
+.aboutme h2{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.abouttext{
+    width:100%;
+    text-align: center;
+    margin-left: 0px;
+    float: right;
+    top:0px;
+    
+}
+.abouttext p{
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+#blurtext{
+    color: #adacac;
+}
+.fskills{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+#skills{
+    width: 300px;
+    height: 247px;
+    background-color: #D9F0FC;
+    box-shadow: 0px 4px 6px 2px;
+}
+#skills p{
+    margin-left: 20px;
+}
+/*Ui jos projecs*/
+.uijobssec{
+    width: 85%;
+    margin: auto;
+    
+}
+
+#uipro{
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+}
+#uipro h2{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.uijobsimg{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    object-fit: cover;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+#uiimage{
+    width: 413;
+    height: 416;
+    border-radius: 4%;
+    transition: transform 0.5s ease-out;
+}
+#uiimage:hover{
+    transform: scale(1.02);
+}
+#imgwithbtn{
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+   
+}
+#imgwithbtn img{
+    border-radius: 4%;
+    width: auto;
+    height: auto;
+    transition: transform 0.5s ease-out;
+}
+#imgwithbtn img:hover{
+    transform: scale(1.02);
+    
+}
+#btnui{
+    height: 60px;
+    margin-top: 30px;
+    font-weight: 700;
+    background: #1DA0E9;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: transform 0.5s ease-in-out;
+}
+#btnui:hover{
+    transform: scale(0.95);
+    background: #ffff;
+}
+.arrow{
+    margin-left: 20px;
+}
+/*Contact Form*/
+.contact{
+    width: 85%;
+    margin: auto;
+    padding: 0px;
+}
+.contact h2{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.contactbox{
+    width: 100%;
+    margin: auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.formarea{
+    width: 100%;
+    height:normal;
+    padding: 3px ;
+    background: #D9F0FC;
+    margin: auto;
+    box-shadow: 0px 4px 6px 2px;
+}
+.formarea h2{
+    text-align: left;
+    margin: 0;
+}
+.form{
+    width: 100%;
+    margin-top: 40px;
+    
+}
+.form label{
+    font-size: 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+.form #sender_name, #sender_email, #sender_subject{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.form #sender_subject{
+    margin-bottom: 10px;
+}
+#button{
+    padding: 7px;
+    margin: 5px 0 10px 0;
+    background-color: #1DA0E9;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.5s ease-in;
+    
+}
+#button:hover {
+    transform: scale(1.07);
+    background: #ffff;
+}
+#message{
+    height: 100px;
+    width: 100%;
+}
+.via{
+    background-color: #1DA0E9;
+    font-weight:800;
+}
+.num{
+    background-color: #1DA0E9;
+    font-weight:800;
+}
+.emai{
+    background-color: #1DA0E9;
+    font-weight:800;
+}
+/*contsct image*/
+
+.contactimage img{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    transition: transform 0.3s ease-out;
+}
+.contactimage img:hover{
+    transform: scale(1.02);
+}
+.socialmedia{
+    height: 60px;
+    background: #000;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6px;
+    padding-top: 15px;
+}
+
+
+/*Footer side*/
+footer{
+    width: 100%;
+    background: #D9F0FC;
+    box-shadow: 0px 4px 6px 2px;
+}
+.footer{
+    width: 85%;
+    height: normal;
+    background: #D9F0FC;
+    margin: auto;
+    margin-top: 20px;
+}
+.copyright{
+    background: #000;
+    color: rgb(190, 189, 189);
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 8px;
+}
+.footer h1{
+    text-align: center;
+}
+.fottext{
+    text-align: center;
+    
+}
+.fottext p{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+@media(min-width: 1000px){
+    .contactbox{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+    }
+    .formarea{
+        width: 65%;
+        padding-left: 40px;
+        margin-left: 0%;
+        
+    }
+    .form{
+        width: 90%;
+    }
+    .contactimage img{
+        top: 0;
+    }
+    .fottext{
+        text-align: center;
+    }
+   
+}
