@@ -44,7 +44,7 @@
     background-color : #D9F0FC;
     box-shadow: 0 2px 5px rgba(0, 85, 175, 0.642);
     padding-top: 2vh;
-    
+    z-index: 30;
     
 }
 .menu header{
